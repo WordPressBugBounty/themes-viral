@@ -1385,8 +1385,13 @@
 
 /*Upgrade Section*/
 .control-section-ht--upgrade-section.ht--single-row .button {
-    float: right;
-    margin-top: -2px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.control-section-ht--upgrade-section .accordion-section-title:after{
+    display: none !important;
 }
 
 .control-section-ht--upgrade-section.ht--boxed {
