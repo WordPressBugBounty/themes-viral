@@ -199,6 +199,14 @@
     object-position: top center;
 }
 
+.welcome-demo-import-text .button{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /** Recommende Plugins **/
 .recommended_plugins h3 {
     margin: 0 0 15px;
@@ -633,3 +641,19 @@ body.toplevel_page_viral-welcome #wpfooter a {
         margin-bottom: 0;
     }
 }
+/*
+#toplevel_page_viral-welcome .wp-menu-name:after{
+    content: "40%\AOFF";
+    white-space: pre;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FF0000;
+    color: #FFF;
+    font-size: 10px;
+    line-height: 1;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}*/
