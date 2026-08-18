@@ -1,8 +1,8 @@
 === Viral ===
 Contributors: hashthemes
 Requires at least: 6.3
-Tested up to: 6.9
-Stable tag: 1.8.57
+Tested up to: 7.0
+Stable tag: 1.8.58
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,6 +20,14 @@ Viral is a responsive magazine WordPress theme specially designed for magazine, 
 
 
 == Changelog ==
+= 1.8.58 - Aug 18, 2026 =
+* Free vs Pro comparison rebuilt against Viral Pro 1.6.0 - table of contents, NewsArticle structured data, Google News sitemap, speculative loading, icon and font loading control and print stylesheet added; demo, widget and layout counts corrected - Updated
+* Customizer upgrade section now shows the price and licence terms up front with clearer calls to action - Changed
+* Upgrade notices checked against the premium theme; claims the free theme already provides have been removed - Fixed
+* Pro preview thumbnail count corrected - Fixed
+* Pro blog and archive layout previews added to the single post settings - Added
+* Upgrade feature list expanded with premium features it was not mentioning - Added
+
 = 1.8.57 - Mar 19, 2026 =
 * New Premium demo added
 
