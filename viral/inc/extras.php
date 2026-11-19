@@ -4,11 +4,7 @@
  */
 
 /**
- * Build a tracked Viral Pro upgrade URL.
- *
- * Every upsell link in the theme goes through this so each placement is
- * distinguishable in analytics. Without utm_content every prompt looks
- * identical in reports and there is no way to tell which one converts.
+ * Build a tracked Viral Pro upgrade URL; utm_content tells each placement apart in analytics.
  *
  * @param string $placement Short slug identifying where the link lives, e.g. 'customizer-footer'.
  * @param string $medium    utm_medium value. Defaults to the inline-notice medium.
@@ -29,14 +25,8 @@ function viral_upgrade_url($placement = '', $medium = 'viral-link') {
 }
 
 /**
- * Return the seasonal upgrade campaign running today, or false.
- *
- * Replaces hand-editing the banner title and shipping a release for every
- * sale. Date windows are month-day, so they repeat every year.
- *
- * 'badge', 'title' and 'button' replace the upgrade card's copy while a
- * window is open, and the card hides its list price. No prices or coupon
- * codes go here.
+ * Return the seasonal upgrade campaign running today, or false. Month-day windows repeat yearly;
+ * no prices or coupon codes here.
  *
  * @return array|false Campaign array with id/title/button, or false outside every window.
  */
@@ -388,9 +378,7 @@ function viral_typography_vars($keys) {
         $letter_spacing = get_theme_mod($key . '_letter_spacing');
         $color = get_theme_mod($key . '_color');
 
-        if (strpos($style, 'italic')) {
-            $italic = 'italic';
-        }
+        $italic = strpos((string) $style, 'italic') ? 'italic' : '';
 
         $weight = absint($style);
         $key = str_replace('_', '-', $key);

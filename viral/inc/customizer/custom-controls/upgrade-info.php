@@ -8,9 +8,7 @@ class Viral_Upgrade_Info_Control extends WP_Customize_Control {
     public $upgrade_text = '';
 
     /**
-     * Value line shown under the feature list. Only rendered when this control
-     * actually links somewhere, so plain informational notices that reuse this
-     * class are left alone. Set to false on an individual control to suppress it.
+     * Value line shown under the feature list, only when the control links somewhere. False hides it.
      */
     public $upgrade_note = '';
 
@@ -45,7 +43,7 @@ class Viral_Upgrade_Info_Control extends WP_Customize_Control {
         }
 
         if ($this->upgrade_url && false !== $this->upgrade_note) {
-            $note = $this->upgrade_note ? $this->upgrade_note : esc_html__('One-time payment: 1 site $69, unlimited sites $99. Lifetime updates, no renewal fees.', 'viral');
+            $note = $this->upgrade_note ? $this->upgrade_note : apply_filters('viral_upgrade_note', esc_html__('One-time payment, lifetime updates, no renewal fees.', 'viral'));
             echo '<p class="ht--upgrade-note">' . esc_html($note) . '</p>';
         }
     }

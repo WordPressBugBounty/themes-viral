@@ -7,8 +7,6 @@ class Viral_Box_Shadow_Control extends WP_Customize_Control {
 
     /**
      * Add support for palettes to be passed in.
-     *
-     * Supported palette values are true, false, or an array of RGBa and Hex colors.
      */
     public $unit = '';
 
@@ -122,7 +120,7 @@ class Viral_Box_Shadow_Control extends WP_Customize_Control {
                 </span>
 
                 <div class="customize-control-content">
-                    <input class="ht--color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e('Hex Value', 'viral'); ?>" {{{ data.color.link }}} value="{{ data.color.value }}"  />
+                    <input class="ht--color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e('Hex Value', 'viral'); ?>" {{{ data.color.link }}} value="{{ data.color.value }}" />
                 </div>
             </li>
             <# } #>

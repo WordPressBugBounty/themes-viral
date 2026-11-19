@@ -16,7 +16,6 @@ class Viral_Tab_Control extends WP_Customize_Control {
         $formatted_buttons = array();
         $all_fields = array();
         foreach ($this->buttons as $button) {
-            //$fields = array();
             $active = isset($button['active']) ? $button['active'] : false;
             if ($active && $first) {
                 $first = false;
@@ -43,7 +42,7 @@ class Viral_Tab_Control extends WP_Customize_Control {
             <div class="ht--customizer-tabs">
                 <# for (tab in data.buttons) { #>
                 <a href="#" class="ht--customizer-tab <# if ( data.buttons[tab].active ) { #> active <# } #>" data-tab="{{ tab }}">
-                    <# if ( data.buttons[tab].icon ) { #> 
+                    <# if ( data.buttons[tab].icon ) { #>
                     <span class="{{ data.buttons[tab].icon }}"></span>
                     <# } #>
                     {{ data.buttons[tab].name }}

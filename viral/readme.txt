@@ -2,7 +2,7 @@
 Contributors: hashthemes
 Requires at least: 6.3
 Tested up to: 7.1
-Stable tag: 1.9.0
+Stable tag: 1.9.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,6 +20,14 @@ Viral is a responsive magazine WordPress theme specially designed for magazine, 
 
 
 == Changelog ==
+= 1.9.1 - Nov 19, 2026 =
+* Customizer upgrade box made smaller: the price is in the button, and the feature list is removed - Changed
+* Seasonal sale banner on the admin screens during a sale, which can be closed - Added
+* Customizer colour picker redesigned: one card with the picker on top and the hex field below - Changed
+* Unused Customizer preview code copied from another theme (site title, description and tagline bindings for Viral Mag) - Removed
+* Code comments shortened, and unused commented-out code removed - Changed
+* Customizer font weight lookup limited to administrators - Fixed
+
 = 1.9.0 - Nov 16, 2026 =
 * Settings page redesigned, with a compact header, a Viral Pro card, clearer tabs, a setup checklist, Customizer shortcuts and rewritten help text - Changed
 * Spotlight and The Wellness Journal Viral Pro demos on the Settings page and in the demo importer, for 19 Viral Pro demos - Added
